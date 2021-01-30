@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet">
+  
+  <title>Single Price Grid Component</title>
+  <!--                                   ******    le code CSS    ******                                  -->
+  <style>
+  
+body{background-color: whitesmoke;
+font-family:"karla";
+
+}
+.parent{
+  display: grid;
+  grid-template-columns: 300px 300px ;
+  height: 200px;
+}
+   
+.child1
+{
+background-color: rgb(49, 182, 182);
+padding-left: 40px;
+color: white;
+
+}
+.child2
+{
+  background-color: hsl(184, 67%, 57%);
+  padding-left: 40px;
+  color: white;
+
+  
+  
+}
+.child3
+{
+  background-color: white;
+  width: 560px;
+  height: 150px;
+  padding-left: 40px;
+}
+
+     
+      .tjm
+      {display: flex;
+      flex-direction:column;
+    align-items: center;
+  
+  }
+      
+    .blue{font-size: 20px;color:rgb(61, 236, 236);}
+      .green{font-size: 15px;color: chartreuse;}
+      .grey{font-size: 12px;color: darkgray;width: 400px;}
+      #b1{background-color: hsl(71, 73%, 54%);
+      border-style: none;
+      
+    width: 226px;height: 45px;
+  color: white;
+
+border-radius: 5px;
+margin-bottom: 50px;
+      }
+#b1:hover{background-color: coral;}
+
+      .per
+      {
+        font-size: 16px;
+        color:grey;
+        margin-left: 5px;
+        
+      }
+    
+.dolar
+{
+display: inline;
+
+}
+.tjm{margin-top: 100px;
+max-width: 100%;}
+.twil{width: 185px; }
+
+
+
+@media screen and (max-width: 375px) {
+  
+  .child3{max-width:260px;height: 250px;}
+  .child3 .grey{max-width: 250px;font-size: 15px; 
+
+  }
+
+  .child3{position: relative;left: 25px;}
+  
+ .child2 {position: relative;top:256px;}
+ .child2{position: relative;left: -125px;}
+ .child1{position: relative;left:175px;}
+  
+}
+  </style>
+   <!--                                   ******    le code HTML    ******                                  -->
+</head> 
+<body>
+  <div class="tjm">
+  <div class="child3">
+    
+    <h1 class="blue">Join our community</h1>
+
+    <h2 class="green"> 30-day hassle-free money back guarantee</h2> 
+  
+    <h3 class="grey"> access to our full library of tutorials along with expert code reviews. 
+    Perfect for any developers who are serious about honing their skills.
+  </h3></div>
+  <div class=parent>
+
+<div class="child1">
+  <h3 class="mon">Monthly Subscription</h3>
+<h2 class="dolar">&dollar;29</h2>
+<label class="per">per month</label>
+<p class="full">Full access for less than &dollar;1 a day</p><br><br>
+<input type="submit" value=" Sign Up" id="b1">
+
+</div>
+<div class="child2">
+  <h2 class="why">Why Us</h2>
+  <p class="twil">Tutorials by industry experts
+    Peer &amp; expert code review
+    Coding exercises
+    Access to our GitHub repos
+    Community forum
+    Flashcard decks
+    New videos every week</p>
+
+</div>
+  </div>
+</div>
+</body>
+</html>
